@@ -8,7 +8,7 @@ Desenvolvida utilizando as tecnologias NestJS, MySQL e Elasticsearch sua princip
 
 ## Infraestrutura  
 
-Toda estrutura da aplicação utilizar container docker e docker composer.  
+Toda estrutura da aplicação utilizar container docker estruturados com docker compose.  
 
 - [Docker](https://www.docker.com/)  
 - [Docker Compose](https://docs.docker.com/compose/)  
