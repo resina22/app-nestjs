@@ -2,6 +2,26 @@
 
 As dependências do NodeJS são instalandas ao inciar o container, o servidor do NestJS já é inciado após a instalação no modo watch.  
 
+## Definindo .env  
+Para definir as variáveis de ambiente basta executar o comando  
+
+- .env desenvolvimento
+
+```bash
+docker exec -it nodejs_app npm run env-dev
+```  
+- .env teste  
+
+```bash
+docker exec -it nodejs_app npm run env-test
+```  
+
+Após definir o .env é necessário reiniciar o container do NodeJS  
+
+```bash
+docker restart nodejs_app
+```  
+
 ## Rotas  
 
 - Lista todos os dados da api fake JSONPlaceholder  

@@ -34,6 +34,20 @@ Para comunicação dos container foram criadas duas redes
 
 ## Iniciando containers  
 
+Antes de iniciar os containers é necessário dar permissões as pastas que vão armazenar os dados dos mesmos, acesse o diretório do projeto e execute os comandos:  
+
+- Volume do MySQL
+```bash
+mkdir volumes/db
+```
+
+- Volume do Elasticsearch
+```bash
+mkdir volumes/elasticsearch
+sudo chgrp 0 volumes/elasticsearch
+chmod g+rwx volumes/elasticsearch 
+```  
+
 Iniciando principais containers  
 
 ```bash
