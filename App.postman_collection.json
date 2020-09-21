@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "8b001ba3-2878-44d5-8bb7-72b57b433e60",
+		"name": "App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "elasticsearch-search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": { \n    \"match\": { \"level\": 1 }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9200/log/_search",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"log",
+						"_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "novo-usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"Leanne Graham\",\n\t\"username\": \"Bret\",\n\t\"email\": \"Sincere@april.biz\",\n\t\"address\": {\n\t\t\"street\": \"Kulas Light\",\n\t\t\"suite\": \"Apt. 556\",\n\t\t\"city\": \"Gwenborough\",\n\t\t\"zipcode\": \"929983874\",\n\t\t\"geo\": {\n\t\t\t\"lat\": \"-37.3159\",\n\t\t\t\"lng\": \"81.1496\"\n\t\t}\n\t},\n\t\"phone\": \"1-770-736-8031 x56442\",\n\t\"website\": \"hildegard.org\",\n\t\"company\": {\n\t\t\"name\": \"Romaguera-Crona\",\n\t\t\"catchPhrase\": \"Multi-layered client-server neural-net\",\n\t\t\"bs\": \"harness real-time e-markets\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salvar-dados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuario/salvar-dados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"salvar-dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "baixar-dados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuario/baixar-dados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"baixar-dados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar-usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
