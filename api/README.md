@@ -1,6 +1,6 @@
 ## Instalando dependências  
 
-As dependências do NodeJS são instalandas ao inciar o container, o servidor do NestJS já é inciado após a instalação no modo watch.  
+As dependências do NodeJS são instalandas ao inciar o container, o servidor do NestJS já é inciado no modo watch após a instalação.  
 
 ## Definindo .env  
 Para definir as variáveis de ambiente basta executar o comando  
