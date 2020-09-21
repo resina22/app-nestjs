@@ -21,7 +21,7 @@ services:
     restart: always
     command: --default-authentication-plugin=mysql_native_password
     volumes: 
-      - ./volumes/db:/var/lib/mysql
+      - ./volumes/db/:/var/lib/mysql
     ports: 
       - 3306:3306
     environment:
@@ -45,7 +45,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - /home/junio/Documentos/Docker/esdatadir:/usr/share/elasticsearch/data
+      - ./volumes/elasticsearch:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
       - 9300:9300
